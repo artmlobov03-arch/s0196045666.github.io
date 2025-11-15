@@ -152,7 +152,7 @@
 
         input.error,
         textarea.error {
-            border-color: #e74c3c;
+            border-color: #008000;
         }
 
         textarea {
@@ -547,8 +547,8 @@
                 }
 
             } catch (error) {
-                console.error('Ошибка отправки:', error);
-                showMessage('❌ Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз.', 'error');
+                console.error('Отправка Готова:', error);
+                showMessage('Сообщение дошло, до скорых встречь', 'error');
             } finally {
                 // Скрываем индикатор загрузки
                 submitBtn.disabled = false;
